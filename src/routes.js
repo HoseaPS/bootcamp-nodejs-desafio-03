@@ -22,6 +22,9 @@ routes.post(
 
 routes.use(authMiddleware)
 
+/**
+ * Ads
+ */
 routes.get('/ads', handle(controllers.AdController.index))
 routes.get('/ads/:id', handle(controllers.AdController.show))
 routes.post(
@@ -36,10 +39,15 @@ routes.put(
 )
 routes.delete('/ads/:id', handle(controllers.AdController.destroy))
 
+/**
+ * Purchases
+ */
 routes.post(
   '/purchases',
   validate(validators.Purchase),
   handle(controllers.PurchaseController.store)
 )
+
+routes.put('/purchases/:id', handle(controllers.ApproveController.update))
 
 module.exports = routes
