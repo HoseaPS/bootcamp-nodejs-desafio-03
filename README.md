@@ -1,6 +1,6 @@
 # Bootcamp NodeJS Desafio 3
 
-Aplicação utilizando NodeJS, conceito API REST, MongoDB, autenticação JWT, Mailtrap para teste de envios de email, Redis, Youch, Sentry, EditorConfig e ESLint.
+Aplicação REST utilizando NodeJS, conceito API REST, MongoDB, autenticação JWT, Mailtrap para teste de envios de email, Redis, Youch, Sentry, EditorConfig e ESLint.
 
 ## App
 
