@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const mongoosePaginate = require('mongoose-paginate')
 
 const Purchase = new mongoose.Schema({
   content: {
@@ -20,5 +21,7 @@ const Purchase = new mongoose.Schema({
     default: Date.now
   }
 })
+
+Purchase.plugin(mongoosePaginate)
 
 module.exports = mongoose.model('Purchase', Purchase)
